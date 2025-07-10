@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.Controlador">
+   <children>
+      <Label graphicTextGap="10.0" layoutX="48.0" layoutY="45.0" text="Maquina de Coxinha">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="99.0" text="Estoque:">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="campoEstoque" editable="false" layoutX="108.0" layoutY="100.0" prefHeight="25.0" prefWidth="63.0" />
+      <Button layoutX="33.0" layoutY="161.0" mnemonicParsing="false" onAction="#abastecer" prefHeight="30.0" prefWidth="103.0" text="Abastecer">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="237.0" layoutY="161.0" mnemonicParsing="false" onAction="#vender" text="Vender">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="459.0" layoutY="206.0" mnemonicParsing="false" onAction="#zerarMaquina" text="Zerar">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="quantidadeAbastecer" layoutX="34.0" layoutY="208.0" promptText="Insira a quantidade" />
+      <TextField fx:id="quantidadeVender" layoutX="237.0" layoutY="208.0" promptText="Insira a quantidade" />
+      <Button layoutX="447.0" layoutY="161.0" mnemonicParsing="false" onAction="#vender1" text="Vender 1">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
